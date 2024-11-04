@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "wintr_backend": {
+      "main": "src/wintr_backend/main.mo",
+      "type": "motoko"
+    },
+    "wintr_frontend": {
+      "dependencies": [
+        "wintr_backend"
+      ],
+      "source": [
+        "src/wintr_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "wintr_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
