@@ -18,6 +18,9 @@ export default defineConfig({
     },
   },
   server: {
+    port: 4943,
+    strictPort: true, // Force the specified port
+    host: 'localhost',
     proxy: {
       "/api": {
         target: "http://127.0.0.1:4943",
@@ -29,6 +32,15 @@ export default defineConfig({
     react(),
     environment("all", { prefix: "CANISTER_" }),
     environment("all", { prefix: "DFX_" }),
+    {
+      name: 'configure-response-headers',
+      configureServer: (server) => {
+        server.middlewares.use((_req, res, next) => {
+          res.setHeader("Access-Control-Allow-Origin", "*");
+          next();
+        });
+      },
+    }
   ],
   resolve: {
     alias: [
@@ -40,4 +52,11 @@ export default defineConfig({
       },
     ],
   },
+  define: {
+    // Make DFX_NETWORK available
+    'process.env.DFX_NETWORK': JSON.stringify(process.env.DFX_NETWORK),
+    // Add other environment variables you need
+    'process.env.CANISTER_ID_INTERNET_IDENTITY': JSON.stringify(process.env.CANISTER_ID_INTERNET_IDENTITY),
+    'process.env.CANISTER_ID_WINTR_BACKEND': JSON.stringify(process.env.CANISTER_ID_WINTR_BACKEND),
+  }
 });
