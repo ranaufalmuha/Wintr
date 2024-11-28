@@ -115,11 +115,11 @@ export const UserPage = ({ initProfile = null, isEditing = false }) => {
         );
     }
 
-    if (isLoading) {
+    if (isLoading && !isEditing) {
         return <LoadingPage />;
     }
 
-    if (!isProfileFound) {
+    if (!isProfileFound && !isEditing) {
         return <NotFound404 />;
     }
 
