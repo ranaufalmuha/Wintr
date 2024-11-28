@@ -2,16 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}
+
+
 :root {
   --dark_background: #212121;
-  --dark_color: white;
-  --light_background: #F0F2F2;
+  --dark_color: #E0E4E4;
+  --light_background: #E0E4E4;
   --light_color: #212121;
 }
 
 body{
-  background-color: var(--dark_background);
-  color: var(--dark_color);
-  // background-color: var(--light_background);
-  // color: var(--light_color);
+  // background-color: var(--dark_background);
+  // color: var(--dark_color);
+  background-color: var(--light_background);
+  color: var(--light_color);
+}
+
+/* index.css */
+.myswap input {
+  display: none; 
+}
+
+.myswap .myicon {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.myswap .myicon.sun {
+  opacity: 1; 
+  transform: rotate(0deg); 
+}
+
+.myswap .myicon.moon {
+  opacity: 0; 
+  transform: rotate(-180deg); 
+}
+
+.myswap input:checked ~ .myicon.sun {
+  opacity: 0; 
+  transform: rotate(180deg); 
+}
+
+.myswap input:checked ~ .myicon.moon {
+  opacity: 1; 
+  transform: rotate(0deg);  
+}
+
+
+/* Gaya untuk elemen yang akan dianimasikan */
+.rotating-element {
+  animation: spin 6s linear infinite; 
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
 }

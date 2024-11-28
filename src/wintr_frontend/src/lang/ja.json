@@ -1,0 +1,27 @@
+{
+    "navbar": {
+        "connect": "接続"
+    },
+    "footer": {
+        "live_now": "現在ライブ中です",
+        "connect_with_us": "今日私たちとつながりましょう！",
+        "adjust_branding": "ブランドや希望するトーンに合わせて、どの部分でも調整してください！"
+    },
+    "landing_page": {
+        "title": "オンラインインパクトを加速させましょう！",
+        "intro": "デジタルインタラクションを忘れられない体験に変えましょう。今日Wintrを発見し、無限の未来への第一歩を踏み出しましょう！",
+        "get_started": "今すぐ始める",
+        "what_is_wintr": "Wintrとは？",
+        "wintr_description": "WintrはWeb3の無限の可能性への架け橋です。クリエイター、インフルエンサー、デジタル世界の愛好者のために設計されたWintrは、すべての主要なデジタルタッチポイントを1つのダイナミックでインタラクティブなプラットフォームに統合します。",
+        "features": "機能",
+        "gateway_to_web3": "Web3の世界へのゲートウェイ",
+        "nft_integration": "NFT統合",
+        "zero_gas_fee": "ゼロガス手数料取引",
+        "customizable_profiles": "カスタマイズ可能なプロフィール",
+        "seamless_navigation": "シームレスなナビゲーション",
+        "join_innovative_journey": "この革新的な旅に参加し、デジタルインタラクションの未来を探求しましょう！",
+        "ready_to_elevate": "デジタルプレゼンスを高める準備はできていますか？今日Wintrにサインアップし、Web3の真の可能性を解き放ちましょう！",
+        "team": "チーム",
+        "to_keep_innovative": "Wintrを革新し続けるために"
+    }
+}

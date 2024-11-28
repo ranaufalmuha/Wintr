@@ -1,0 +1,27 @@
+{
+    "navbar": {
+        "connect": "Bağlan"
+    },
+    "footer": {
+        "live_now": "Şu anda yayındayız",
+        "connect_with_us": "Bugün bizimle iletişime geçin!",
+        "adjust_branding": "Markanızı veya istediğiniz tonu daha iyi uyacak şekilde ayarlamaktan çekinmeyin!"
+    },
+    "landing_page": {
+        "title": "Çevrimiçi Etkinliğinizi Hızlandırın!",
+        "intro": "Dijital etkileşimlerinizi unutulmaz deneyimlere dönüştürün. Bugün Wintr'ı keşfedin ve sınırsız bir geleceğe ilk adımı atın!",
+        "get_started": "Hemen Başlayın",
+        "what_is_wintr": "Wintr nedir?",
+        "wintr_description": "Wintr, Web3'ün sınırsız olanaklarına köprüdür. Yaratıcılar, influencerlar ve dijital dünyanın meraklıları için tasarlanmış olan Wintr, tüm ana dijital temas noktalarınızı tek bir dinamik, etkileşimli platformda birleştirir.",
+        "features": "Özellikler",
+        "gateway_to_web3": "Web3 Dünyasına Kapınız",
+        "nft_integration": "NFT Entegrasyonu",
+        "zero_gas_fee": "Sıfır Gaz Ücreti İşlemleri",
+        "customizable_profiles": "Özelleştirilebilir Profiller",
+        "seamless_navigation": "Kesintisiz Navigasyon",
+        "join_innovative_journey": "Bu yenilikçi yolculuğa katılın ve dijital etkileşimin geleceğini keşfedin!",
+        "ready_to_elevate": "Dijital varlığınızı yükseltmeye hazır mısınız? Bugün Wintr'a kaydolun ve Web3'ün gerçek potansiyelini açığa çıkarın!",
+        "team": "Ekip",
+        "to_keep_innovative": "Wintr'ı Yenilikçi Tutmak İçin"
+    }
+}

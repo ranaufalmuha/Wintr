@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from './../../components/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import { LoadingPage } from '../status/LoadingPage';
 
 export const UserCreate = () => {
     const { authenticatedActor, principal, login, loading: authLoading } = useAuth();
@@ -131,15 +132,13 @@ export const UserCreate = () => {
 
     if (!authenticatedActor || authLoading) {
         return (
-            <main className='flex flex-col min-h-dvh justify-center items-center'>
-                <div className="animate-pulse">Loading...</div>
-            </main>
+            <LoadingPage />
         );
     }
 
     return (
-        <main className='flex flex-col min-h-dvh justify-center items-center'>
-            <div className="flex flex-col gap-3">
+        <main className='flex flex-col min-h-dvh w-full justify-center items-center'>
+            <div className="flex flex-col gap-3 ">
                 <p className='text-disabled text-sm'>Create Username</p>
                 <div className={`py-3 px-6 rounded-xl w-96 border ${error ? 'border-red-500' :
                     isValid ? 'border-green-500' :

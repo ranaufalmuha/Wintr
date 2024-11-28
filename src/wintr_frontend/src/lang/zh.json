@@ -1,0 +1,27 @@
+{
+    "navbar": {
+        "connect": "连接"
+    },
+    "footer": {
+        "live_now": "我们现在直播",
+        "connect_with_us": "今天与我们联系！",
+        "adjust_branding": "随意调整任何部分以更好地适应您的品牌或所需的语气！"
+    },
+    "landing_page": {
+        "title": "加速您的在线影响力！",
+        "intro": "将您的数字互动转变为难忘的体验。今天发现Wintr，迈出通往无限未来的第一步！",
+        "get_started": "立即开始",
+        "what_is_wintr": "什么是Wintr？",
+        "wintr_description": "Wintr是您通往Web3无限可能性的桥梁。为创作者、影响者和数字世界的爱好者设计，Wintr将您所有的关键数字接触点整合到一个动态的互动平台中。",
+        "features": "特点",
+        "gateway_to_web3": "您通往Web3世界的门户",
+        "nft_integration": "NFT集成",
+        "zero_gas_fee": "零燃气费交易",
+        "customizable_profiles": "可定制的个人资料",
+        "seamless_navigation": "无缝导航",
+        "join_innovative_journey": "加入我们，踏上这段创新之旅，探索数字互动的未来！",
+        "ready_to_elevate": "准备提升您的数字存在感吗？今天注册Wintr，解锁Web3的真正潜力！",
+        "team": "团队",
+        "to_keep_innovative": "保持Wintr的创新"
+    }
+}

@@ -4,6 +4,7 @@ import './index.scss';
 import { RouterProvider } from 'react-router-dom';
 import router from './routes';
 import { AuthProvider } from './components/AuthContext';
+import './i18n';
 
 // Create a root wrapper component
 const Root = () => {

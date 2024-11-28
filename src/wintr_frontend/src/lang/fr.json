@@ -1,0 +1,27 @@
+{
+    "navbar": {
+        "connect": "Connecter"
+    },
+    "footer": {
+        "live_now": "Nous sommes en direct maintenant",
+        "connect_with_us": "Connectez-vous avec nous aujourd'hui !",
+        "adjust_branding": "N'hésitez pas à ajuster n'importe quelle partie pour mieux correspondre à votre marque ou au ton souhaité !"
+    },
+    "landing_page": {
+        "title": "Accélérez votre impact en ligne !",
+        "intro": "Transformez vos interactions numériques en expériences inoubliables. Découvrez Wintr aujourd'hui et faites le premier pas vers un avenir illimité !",
+        "get_started": "Commencez maintenant",
+        "what_is_wintr": "Qu'est-ce que Wintr ?",
+        "wintr_description": "Wintr est votre pont vers les possibilités illimitées de Web3. Conçu pour les créateurs, les influenceurs et les passionnés du monde numérique, Wintr consolide tous vos points de contact numériques clés en une plateforme dynamique et interactive.",
+        "features": "Caractéristiques",
+        "gateway_to_web3": "Votre passerelle vers le monde Web3",
+        "nft_integration": "Intégration NFT",
+        "zero_gas_fee": "Transactions sans frais de gaz",
+        "customizable_profiles": "Profils personnalisables",
+        "seamless_navigation": "Navigation fluide",
+        "join_innovative_journey": "Rejoignez-nous dans ce voyage innovant et explorez l'avenir de l'interaction numérique !",
+        "ready_to_elevate": "Prêt à élever votre présence numérique ? Inscrivez-vous à Wintr aujourd'hui et débloquez le véritable potentiel de Web3 !",
+        "team": "Équipe",
+        "to_keep_innovative": "Pour garder Wintr innovant"
+    }
+}

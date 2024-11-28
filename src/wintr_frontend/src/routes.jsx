@@ -1,12 +1,13 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import { MainLayout } from './components/layout/MainLayout';
+import { MainLayoutUser } from './components/layout_user/MainLayout';
 
 import LandingPage from './pages/LandingPage';
 import { UserPage } from './pages/users/UserPage';
 import { UserEditPage } from './pages/users/UserEditPage';
-import { NotFound404 } from './pages/NotFound404';
 import { UserCreate } from './pages/users/UserCreate';
+import { NotFound404 } from './pages/status/NotFound404';
 
 
 const router = createBrowserRouter([
@@ -18,15 +19,22 @@ const router = createBrowserRouter([
                 index: true,
                 element: <LandingPage />
             },
+        ]
+    },
+    {
+        path: "/admin",
+        element: <MainLayoutUser />,
+        children: [
             {
-                path: "admin",
+                index: true,
                 element: <UserEditPage />
             },
-            {
-                path: "create_user",
-                element: <UserCreate />
-            },
         ]
+    },
+    // create_user 
+    {
+        path: "/create_user",
+        element: <UserCreate />
     },
     // user 
     {
@@ -34,7 +42,7 @@ const router = createBrowserRouter([
         element: <UserPage />
     },
 
-    // notfound page
+    // status page
     {
         path: "/404",
         element: <NotFound404 />

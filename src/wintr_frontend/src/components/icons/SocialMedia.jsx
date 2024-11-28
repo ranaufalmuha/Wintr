@@ -85,7 +85,7 @@ export const TiktokIcon = ({ size = 24, className = '' }) => (
 );
 
 
-export const YouTubeIcon = ({ size = 24, className = '' }) => (
+export const YoutubeIcon = ({ size = 24, className = '' }) => (
     <svg
         className={`text-current ${className}`}
         width={size}
