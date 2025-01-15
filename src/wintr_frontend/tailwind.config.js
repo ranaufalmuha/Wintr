@@ -36,7 +36,7 @@ export default {
         "monthly": "#C0C0C0",
 
         // temp 
-        "bganimation": "#8DC1C5",
+        "bganimation": "#74B3DB",
         "content": "#212121",
         "disabled": "#808080",
       },

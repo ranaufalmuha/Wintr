@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { wintr_backend } from 'declarations/wintr_backend';
-import { LinkIcon, DotsIcon, LogoutIcon } from '../../components/icons/Icons';
-import { InstagramIcon, GithubIcon, LinkedinIcon, ThreadsIcon, XIcon } from '../../components/icons/SocialMedia';
+import { LinkIcon, DotsIcon } from '../../components/icons/Icons';
 import { NotFound404 } from '../status/NotFound404';
-import { ConstIconData, platforms } from './../../components/Const';
+import { ConstIconData } from './../../components/Const';
 import { LoadingPage } from '../status/LoadingPage';
 
 
@@ -127,7 +126,7 @@ export const UserPage = ({ initProfile = null, isEditing = false }) => {
         <div className={`min-h-screen bg-black`}>
             <main className='flex flex-col items-center font-light pb-20'>
                 <div className="bg-bganimation h-[220px] shadow-xl z-40 w-full max-w-[500px] rounded-b-3xl flex justify-center relative">
-                    <img src="./images/soulAnimated.gif" className='h-full' alt="" />
+                    <img src="https://raw.githubusercontent.com/ranaufalmuha/Wintr/refs/heads/main/src/wintr_frontend/public/images/soulAnimated.gif" className='h-full' alt="" />
                     <a href="/" className='hover:scale-110 duration-300 w-5 aspect-square absolute right-0 top-0 m-6 z-50'>
                         <img src="./assets/logo_light.svg" className='object-contain w-full h-full' alt="" />
                     </a>

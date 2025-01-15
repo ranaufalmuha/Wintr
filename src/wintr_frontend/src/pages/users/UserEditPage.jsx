@@ -419,15 +419,26 @@ export const UserEditPage = () => {
         );
     }
 
-    function SocialLinkComponent({ platform, directUrl, iconUrl = '' }) {
+    function SocialLinkComponent({ platform, directUrl, iconUrl = '', id }) {
         const iconData = ConstIconData(isSubscribe);
         const currentIcon = iconUrl.length === 0 ? iconData[platform] : <img src={iconUrl} className='h-6 object-contain invert' alt={`${platform} icon`} />;
         return (
-            <div className="w-12 h-12 rounded-xl bg-light_input_background dark:bg-dark_input_background flex justify-center items-center shadow-lg">
+            <div className="w-12 h-12 rounded-xl bg-light_input_background dark:bg-dark_input_background flex justify-center items-center shadow-lg relative overflow-hidden group duration-300">
+                <button className="absolute bg-black/80 w-full h-full hidden duration-300 justify-center items-center group-hover:flex" onClick={() => handleRemoveSocialLink(id)}>
+                    <DeleteIcon className='text-red-500' />
+                </button>
                 {currentIcon}
             </div>
         );
     }
+
+    const handleRemoveSocialLink = (id) => {
+        setProfile(prev => ({
+            ...prev,
+            socialLinks: prev.socialLinks.filter(link => link.id !== id)
+                .map((link, index) => ({ ...link, id: index }))
+        }));
+    };
 
     const SocialLinkModal = () => {
         const [social, setSocial] = useState({
@@ -563,7 +574,7 @@ export const UserEditPage = () => {
             <div className="container flex flex-col gap-3 lg:pr-12 mr-[398px] overflow-auto no-scrollbar max-lg:mr-0">
                 <div className='text-xl flex items-center'>
                     <p>
-                        <label >Hi Ifal, Welcome to </label>
+                        <label >Hi {profile.username}, Welcome to </label>
                         <label className='font-medium'>Wintr</label>
                     </p>
                     <img src="./assets/icons/subs_lifetime.gif" className='w-10' alt="" />
@@ -624,7 +635,7 @@ export const UserEditPage = () => {
                 <div className="flex flex-wrap gap-7 mt-5 items-center">
 
                     {profile.socialLinks.map((social, i) => (
-                        <SocialLinkComponent key={i} platform={social.platform} directUrl={social.directUrl} iconUrl={social.iconUrl} />
+                        <SocialLinkComponent key={i} platform={social.platform} directUrl={social.directUrl} iconUrl={social.iconUrl} id={social.id} />
                     ))}
 
                     <button className="text-2xl hover:scale-105 duration-300 w-12 h-12 border-2 border-dashed border-light_textdisabled rounded-xl text-light_textdisabled flex items-center justify-center" onClick={() => setIsOpenAddSocialMedia(!isOpenAddSocialMedia)}>

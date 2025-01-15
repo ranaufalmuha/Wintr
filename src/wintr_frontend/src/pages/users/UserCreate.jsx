@@ -119,7 +119,7 @@ export const UserCreate = () => {
                 console.log('Profile created successfully');
                 navigate(`/admin`);
             } else {
-                const errorMessage = response.err?.message || "Failed to create profile";
+                const errorMessage = response.err?.message || "Username can only contain lowercase letters, numbers, underscore (_) and hyphen (.)";
                 setError(errorMessage);
             }
         } catch (err) {

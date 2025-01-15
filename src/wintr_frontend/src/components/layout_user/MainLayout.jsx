@@ -17,7 +17,7 @@ export const MainLayoutUser = () => {
                 const response = await authenticatedActor.hasExistingUsername();
                 const username = response.length ? response[0] : null;
                 if (username == null) {
-                    navigate('/admin/create_user');
+                    navigate('/create_user');
                 }
             } catch (error) {
                 console.error("Error checking username:", error);
